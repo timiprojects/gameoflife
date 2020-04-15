@@ -1,5 +1,28 @@
 .App {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 805px;
+  overflow: hidden;
+  height: 100%;
+  
+  perspective: 1000px;
+  perspective-origin: 50% 50%;
+  backface-visibility: visible;
+}
+
+.Grid {
+  display: grid;
+  /* grid-gap: 10px; */
   text-align: center;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  /* transform: rotateX(50deg) rotateY(0deg) scale(0.8); */
+  transform-style: preserve-3d;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+  background-color: transparent;
 }
 
 .App-logo {
